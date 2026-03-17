@@ -12,6 +12,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Portfolio />} />
+            <Route path="*" element={<Portfolio />} />
           </Routes>
         </BrowserRouter>
         <Toaster />
