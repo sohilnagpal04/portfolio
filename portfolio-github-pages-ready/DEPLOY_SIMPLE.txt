@@ -1,0 +1,194 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     🚀 DEPLOY TO GITHUB PAGES - SIMPLE 5-STEP GUIDE         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+Follow these 5 steps to deploy your portfolio online!
+
+═══════════════════════════════════════════════════════════════
+
+STEP 1: CREATE GITHUB REPOSITORY
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://github.com
+2. Click "+" → "New repository"
+3. Name: portfolio
+4. Make it PUBLIC
+5. DON'T check any boxes
+6. Click "Create repository"
+
+✅ Repository created!
+
+═══════════════════════════════════════════════════════════════
+
+STEP 2: PUSH YOUR CODE TO GITHUB
+═══════════════════════════════════════════════════════════════
+
+Open terminal in your portfolio folder and run:
+
+# Set your Git identity (first time only)
+git config user.name "Your Name"
+git config user.email "your.email@example.com"
+
+# Add remote (replace YOUR_USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+
+# Push code to GitHub
+git add .
+git commit -m "Initial commit: Portfolio website"
+git branch -M main
+git push -u origin main
+
+**When asked for password, use Personal Access Token**
+(See GITHUB_PAGES_DEPLOYMENT.md for how to create one)
+
+✅ Code pushed to GitHub!
+
+═══════════════════════════════════════════════════════════════
+
+STEP 3: DEPLOY TO GITHUB PAGES
+═══════════════════════════════════════════════════════════════
+
+# Go to frontend folder
+cd frontend
+
+# Deploy!
+yarn deploy
+
+OR
+
+npm run deploy
+
+**This takes 1-2 minutes...**
+
+✅ Deployed to gh-pages branch!
+
+═══════════════════════════════════════════════════════════════
+
+STEP 4: ENABLE GITHUB PAGES
+═══════════════════════════════════════════════════════════════
+
+1. Go to your repository on GitHub
+2. Click "Settings" tab
+3. Click "Pages" (left sidebar)
+4. Under "Branch":
+   - Select: gh-pages
+   - Select: / (root)
+5. Click "Save"
+
+**Wait 1-2 minutes...**
+
+✅ GitHub Pages enabled!
+
+═══════════════════════════════════════════════════════════════
+
+STEP 5: VIEW YOUR LIVE SITE!
+═══════════════════════════════════════════════════════════════
+
+Your portfolio is now live at:
+
+   https://YOUR_USERNAME.github.io/portfolio/
+
+Example:
+   https://sohilnagpal04.github.io/portfolio/
+
+✅ Portfolio is LIVE! 🎉
+
+═══════════════════════════════════════════════════════════════
+
+🔄 TO UPDATE YOUR PORTFOLIO LATER:
+═══════════════════════════════════════════════════════════════
+
+1. Make changes to your files
+2. Run these commands:
+
+   git add .
+   git commit -m "Update: describe changes"
+   git push origin main
+   cd frontend
+   yarn deploy
+
+3. Wait 2 minutes
+4. Refresh your site!
+
+═══════════════════════════════════════════════════════════════
+
+✅ VERIFICATION CHECKLIST:
+═══════════════════════════════════════════════════════════════
+
+After deploying, check:
+
+□ Site loads at YOUR_USERNAME.github.io/portfolio
+□ Dark mode works
+□ Light mode toggle works
+□ All sections visible
+□ Navigation menu works
+□ Resume downloads
+□ Mobile responsive
+
+If all checked → SUCCESS! ✅
+
+═══════════════════════════════════════════════════════════════
+
+🐛 COMMON ISSUES:
+═══════════════════════════════════════════════════════════════
+
+❌ 404 Error?
+   → Check package.json "homepage" matches your GitHub URL
+   → Wait 2-3 minutes and refresh
+
+❌ Blank page?
+   → Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)
+   → Check browser console (F12) for errors
+
+❌ Can't push to GitHub?
+   → Use Personal Access Token, not password
+   → See GITHUB_PAGES_DEPLOYMENT.md for details
+
+═══════════════════════════════════════════════════════════════
+
+📖 NEED MORE HELP?
+═══════════════════════════════════════════════════════════════
+
+Read: GITHUB_PAGES_DEPLOYMENT.md
+→ Complete guide with troubleshooting
+→ Personal Access Token setup
+→ Custom domain configuration
+
+═══════════════════════════════════════════════════════════════
+
+🎉 CONGRATULATIONS!
+═══════════════════════════════════════════════════════════════
+
+Your portfolio is now live on the internet!
+
+Share it:
+✓ On your resume
+✓ LinkedIn profile
+✓ Email signature
+✓ With recruiters
+
+═══════════════════════════════════════════════════════════════
+
+QUICK COMMANDS SUMMARY:
+═══════════════════════════════════════════════════════════════
+
+# Initial deployment
+git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+git push -u origin main
+cd frontend
+yarn deploy
+
+# Future updates
+git add .
+git commit -m "Update message"
+git push origin main
+cd frontend
+yarn deploy
+
+═══════════════════════════════════════════════════════════════
+
+That's it! Your portfolio is online! 🚀✨
+
+═══════════════════════════════════════════════════════════════
